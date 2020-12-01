@@ -1,0 +1,128 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+
+<title>Sejong Software</title>
+
+<style type="text/css">
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{margin:0; padding:0;}
+#wrap{max-width:890px; width:100%; max-height:699px; height:auto; margin:100px auto; /*padding:35px 88px;*/  }
+
+#log-title{float:left;}
+
+#log-title .title{color:#c70027; font-family: 'Nanum Gothic', serif; font-size:70px; font-weight:bold; letter-spacing:-3px;}
+
+.subtitle{color:#314e62; font-family: 'Nanum Gothic', serif; font-size:24px; font-weight:bold;  }
+.sub-text{color:#8c8c8c;  font-family: 'Nanum Gothic', serif; font-size:20px; font-weight:bold; }
+#top{ border-bottom:1px solid #e8eaec; height:239px; width:746px; margin:0 auto; background:url(https://portal.sejong.ac.kr/images/login/uis/bg1-1.gif) no-repeat;}
+#center{  border-bottom:1px solid #e8eaec; height:300px; width:746px; margin:0 auto;}
+
+#login_box{float:left; width:360px; margin-top:120px; margin-left:100px; height:64px;}
+fieldset{border:none;}
+
+#box1{width:247px; height:210px; float:left; border:1px solid #e8eaec; margin-top:35px; padding-top:20px;}
+#box1 img{border:0;}
+
+
+#box2{width:247px; height:210px; float:left; border-top:1px solid #e8eaec; margin-top:35px; border-right:1px solid #e8eaec; border-bottom:1px solid #e8eaec;  padding-top:20px;}
+#box2 img{border:0;}
+
+
+#box3{width:247px; height:210px; float:left; border-top:1px solid #e8eaec; margin-top:35px; border-right:1px solid #e8eaec; border-bottom:1px solid #e8eaec;  padding-top:20px;}
+#box3 img{border:0;}
+
+#footer{width:746px; height:130px; margin:0 auto; }
+#footer ul{list-style:none;}
+.red{color:#c70027; margin-top:20px; font-family: 'Nanum Gothic', serif; font-weight:bold;}
+.red1{color:#898989; border-left:0px solid #b4b4b4; margin-top:33px; font-size:13px; font-family: 'Nanum Gothic', serif;}
+.mt2{margin-top:-2px;}
+.mr10{margin-right:15px;}
+#left{ float:left; margin-left:20px;}
+#right{float:left; margin-left:240px; line-height:130px;padding-top:20px; }
+
+#logbtn{  background:#c70027; width:89px; height:84px; color:#FFF; font-family: 'Nanum Gothic', serif; font-size:17px; float:right; clear:both; margin-top:-87px; margin-left:40px; border:none;
+font-weight:bold;}
+
+#password{border:1px #bababa solid; background:#fff; width:145px; height:25px; margin-left:55px; margin-top:4px; }
+
+#password1{border:1px #bababa solid; background:#fff; width:145px; height:25px; margin-left:5px; margin-top:4px; }
+
+#id{border:1px #bababa solid; background:#fff; width:145px; height:25px; margin-left:32px; margin-top:2px; }
+
+input[type="id"] {vertical-align:middle;}
+input[type="password"]  {vertical-align:middle;}
+
+label{ font-family: 'Nanum Gothic', serif; font-size:16px; color:#747575; font-weight:bold; }
+/*새로추가*/
+.subtitle1{color:#b2b2b2; font-family: 'Nanum Gothic', serif; font-size:14px; display:block; clear:both; text-align : right; }
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+    {{ result_message | safe }}
+    <div id="wrap">
+    <div id="top">
+
+    <div id="log-title">
+        <p class="title">SIGN UP</p>    
+        <br><br>
+        <p><span class="subtitle">사물함배정시스템</span><span class="sub-text"> 에 오신것을<br>환영합니다.</span></p>
+    </div>
+
+
+    <div id="login_box">
+
+	<form  method="post" action="/register">
+		<fieldset>
+		   <p>		   
+            <label for="id">학번/아이디</label>
+            <input type="text" id="id" name="id" value="" size="15" tabIndex="1" style="ime-mode:disabled">
+		   </p>
+		   <p>		   
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" value="" size="15" tabIndex="2">
+           </p>		  
+           <p>		   
+            <label for="password">비밀번호 재확인</label>
+            <input type="password" id="password1" name="password1" value="" size="15" tabIndex="3">
+           </p>		  
+           
+		</fieldset>
+		   
+			 <input type="submit" value="회원가입" id="logbtn" style="cursor:hand;">
+
+    	</form>
+
+</div>
+<p>
+
+</p>
+</div>
+
+
+<div id="footer">
+
+<div id="left">
+<ul>
+
+<li class="red1">아이디, 비밀번호를 입력 후 회원가입 버튼을 누르시면 회원가입이 진행됩니다.</li>
+
+</ul>
+</div>
+<div id="right">
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
