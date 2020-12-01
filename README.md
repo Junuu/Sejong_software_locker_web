@@ -8,11 +8,10 @@
 - pip install flask
 - pip install pymysql
 - pip install bcrypt
-(if ERROR)
-- 7.2.
-- python -m pip install --upgrade pip
+- (if pip install bcrypt ERROR) 
+- python -m pip install --upgrade pip 
 - python -m pip install --no-use-pep517 bcrypt
-
+- (else)
 -  python app.py 실행
 
 ## 프로그램 설명
